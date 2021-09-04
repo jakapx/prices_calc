@@ -15,27 +15,27 @@
         <form id="f0" class="grid">
             <div>
                 <label for="cost"> Себестоимость, руб.
-                    <input type="number" id="cost" name="cost" value="0" max="9999999999" />
+                    <input type="number" id="cost" name="cost" value="0" max="9999999999" step="0.01" />
                 </label>
             </div>
             <div>
                 <label for="extPrice"> Наценка, %
-                    <input type="number" id="extPrice" name="extPrice" value="100" max="10000000" />
+                    <input type="number" id="extPrice" name="extPrice" value="100" max="10000000" step="0.01" />
                 </label>
             </div>
             <div>
                 <label for="discount"> Согласованная "Скидка", %
-                    <input type="number" id="discount" name="discount" value="30" />
+                    <input type="number" id="discount" name="discount" value="30" step="0.01" />
                 </label>
             </div>
             <div>
                 <label for="promocode"> Согласованный "Промокод", %
-                    <input type="number" id="promocode" name="promocode" value="30" />
+                    <input type="number" id="promocode" name="promocode" value="30" step="0.01" />
                 </label>
             </div>
             <div>
                 <label for="wildberries"> Вознаграждениe Wildberries, %
-                    <input type="number" id="wildberries" name="wildberries" value="15" />
+                    <input type="number" id="wildberries" name="wildberries" value="15" step="0.01" />
                 </label>
             </div>
             <div>
@@ -45,7 +45,7 @@
             </div>
             <div>
                 <label for="taxRate"> Ставка налога, %
-                    <input type="number" id="taxRate" name="taxRate" value="6" />
+                    <input type="number" id="taxRate" name="taxRate" value="6" step="0.01" />
                 </label>
             </div>
             <div onclick="cpcb(this.querySelector('input').value);">
